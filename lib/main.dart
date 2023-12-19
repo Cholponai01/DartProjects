@@ -1,3 +1,6 @@
-int calculate() {
-  return 6 * 7;
+import 'package:polymorphism/employee.dart';
+
+void main() {
+  Employee employee = Employee("John", "IT");
+  print("sdff ");
 }
