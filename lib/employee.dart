@@ -4,5 +4,7 @@ class Employee {
 
   Employee(this.name, this.department);
 
-  void describeRole() {}
+  void describeRole() {
+    print("I am an employee in $department department.");
+  }
 }

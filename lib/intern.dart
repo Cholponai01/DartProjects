@@ -3,10 +3,12 @@ import 'package:polymorphism/employee.dart';
 class Intern extends Employee {
   String supervisor;
 
-  Intern(this.supervisor, super.name, super.department);
+  Intern(String name, String department, this.supervisor)
+      : super(name, department);
 
   @override
   void describeRole() {
-    print("Intern");
+    super.describeRole();
+    print("I am supervised by $supervisor.");
   }
 }
