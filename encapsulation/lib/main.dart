@@ -2,13 +2,15 @@ import 'package:inheritance/product.dart';
 import 'package:inheritance/products_screen.dart';
 
 void main() {
- ProductsScreen productsScreen = ProductsScreen();
+  ProductsScreen productsScreen = ProductsScreen();
 
-  Product product1 = Product("Laptop", 999.99);
-  Product product2 = Product("Smartphone", 499.99);
+  Product product1 = Product(name: "Mackbook", price: 2222.99);
+  Product product2 = Product(name: "Smartphone", price: 999.99);
+  Product product3 = Product(name: "Laptop", price: 1200.99);
 
   productsScreen.addToCart(product1);
   productsScreen.addToCart(product2);
+  productsScreen.addToCart(product3);
 
   print("Current Cart:");
   for (var product in productsScreen.cart) {
